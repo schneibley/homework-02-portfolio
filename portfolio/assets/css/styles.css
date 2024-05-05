@@ -11,19 +11,24 @@ header, nav, main, footer {
     margin: 0 auto;
 }
 header {
+    display:flex;
+    justify-content:space-between;
     background-color: aquamarine;
+    align-items:center;
     color: blueviolet;
     text-align:left;
     height: 60px;
     border-color: blueviolet;
     border:5px;
 }
-header h1 {
-    display:inline;
-    margin-right: 20px;
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
 }
-nav ul { list-style-type:none;
+nav ul li {
     display:inline;
+    margin-left:10px;
 }
 nav a {
     color:blueviolet;
