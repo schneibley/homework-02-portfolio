@@ -7,10 +7,9 @@ header, nav, main, footer {
 
 }
 .container{
-    width:100%;
+    width: 100%;
     margin: 0 auto;
 }
-
 header {
     background-color: aquamarine;
     color: blueviolet;
