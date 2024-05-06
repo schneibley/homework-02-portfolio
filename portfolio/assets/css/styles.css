@@ -18,8 +18,7 @@ header {
     color: blueviolet;
     text-align:left;
     height: 60px;
-    border-color: blueviolet;
-    border:5px;
+    border: 10px blueviolet;
 }
 nav ul {
     list-style-type:none;
