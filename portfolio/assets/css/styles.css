@@ -11,8 +11,8 @@ header, nav, main, footer {
     margin: 0 auto;
 }
 header {
-    display:flex;
-    justify-content:space-between;
+    display:grid;
+    justify-content:space-around;
     background-color: aquamarine;
     align-items:center;
     color: blueviolet;
