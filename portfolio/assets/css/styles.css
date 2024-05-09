@@ -1,40 +1,23 @@
 body {
+    margin:0
     font-family: Arial, Helvetica, sans-serif;
     line-height:1.5;
     background-color:rgb(167, 239, 215);
     color:blueviolet;
-    text-align: left;
-    flex-grow:1;
-    flex-shrink:1;
+    text-align:left;
 }
+
 header {
-    display:grid;
-    justify-content:space-around;
+    
     background-color: rgb(69, 193, 151);
     align-items:center;
     color: blueviolet;
     text-align:left;
-    height: 200px;
-    border: 10px solid blueviolet;
-    border-radius:20px;
-    width:100%
-}
-main {
-    margin-top:80px;
-}
-section {
-    margin-bottom:40px
+   margin-bottom:10px;
+   border-bottom:3px solid blueviolet
 }
 h1{
-    font-size:60px
-}
-h2{
-
-} 
-h3 {
-        margin-left:40px;
-        margin-bottom:0px;
-} 
+    font-size:60px}
 nav{
     text-decoration:underline
 }
@@ -59,7 +42,6 @@ img{
 a img{  
     border: 5px solid blueviolet;
     border-radius: 8px;
-
 }
 form{
     display: inline-block;
@@ -93,43 +75,44 @@ footer{
     text-align:center;
     padding:20px ;
     width:100%;
-    bottom:0;
-}
-#projects{
-    flex: 4;
-    padding: 50px;
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    justify-content:start;
-}
-.box{
-   display:flex;
-   flex-direction: column; 
+    margin-top:10px;
 }
 
-.large-box{
-flex-grow:1;
-border: 1px solid
+#headline {
+    width: 500px
 }
-.small-box{
-flex: 00 calc(50% - 5px);
-border:1px solid;
+
+.sub-box1 {
+    text-align: center;
 }
-.box img{
-    display: block;
-    width:100%
-    height:auto;
+
+.content-wrapper {
+ display: flex;
+ flex-wrap: wrap;   
+ justify-content:center
+}
+
+.projects img:hover {
+    border: 2px solid pink;
 }
 .container{
-    width:80%;
+    display:grid;
+    grid-template-columns: 40% auto;
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+    width: 90%;
     margin: 0 auto;
+}
+#about-contact{
+grid-column: 1/2;
+background-color: rgb(69, 193, 151);
+padding: 10px;
+}
+#projects{
+grid-column: 2/4;
+background-color: rgb(69, 193, 151);
+}
 
-    
-}
-.project {
-    border: 1px solid white
-}
 .contact-form {
     max-width: 400px;
     margin: 0 auto;
@@ -137,8 +120,30 @@ border:1px solid;
 .contact-form .form {
     margin-bottom:20px;
 }
-@media (max width: 768px) {
-.small-box{
-    flex-basis:  calc(100% -10px);
-}
-}
+
+@media (max-width: 768px) {
+    header {
+      text-align: center; 
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    img {
+      margin: 0 auto;
+      display: block; 
+      max-width: 100%; 
+    }
+  
+    .container {
+      grid-template-columns: 100%; 
+    }
+  
+    #about-contact,
+    #projects {
+      grid-column: auto; 
+      margin-bottom: 20px; 
+    }
+  }
+  

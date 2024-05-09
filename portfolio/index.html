@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brad Schneider portfolio</title>
-  <link rel="stylesheet" href="./assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brad Schneider portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
+
 <body>
-   <header>
-    <div>
-    <h1>Brad Schneider's developer Porfolio</h1>
+    <header>
+        <h1>Brad Schneider's Developer Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -19,61 +19,71 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-     </div>
     </header>
 
-<main>
-    <section id="about">
-        <div class="container">
-          <h2>About Me</h2>
-          <img src="assets/images/DSC01586 (1).jpg" alt="a picture of me, Brad Schneider">
-             <p>Welcome, I'm Brad Schneider and I started my journey as a web-developer on April 22nd, 2024.</p>
+    <main class="container">
+        <section id="about-contact">
+            <div class="about">
+                <h2>About Me</h2>
+                <img src="assets/images/DSC01586 (1).jpg" alt="a picture of me, Brad Schneider">
+                <p>Welcome, I'm Brad Schneider and I started my journey as a web-developer on April 22nd, 2024.</p>
             </div>
-    </section>
-  
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="box">
-             <div class="large-box">
-                <h3>Horiseon</h3>
-<a href="https://schneibley.github.io/homework-01/"><img src="./assets/images/01-html-css-git-homework-demo.png" alt="a sample image of my project"></a>
-            </div>
-            <div class="small-box"><h3>Upcoming Project</h3>
-                <a href="https://www.google.com"><img src="./assets/images/sample.jpg" alt="placeholder"></a> 
-            </div>
-            <div class="small-box"><h3>Upcoming Project</h3>
-                <a href="https://www.google.com"><img src="./assets/images/sample.jpg" alt="placeholder"></a>
-            </div>
-            <div class="small-box"><h3>Upcoming Project</h3>
-                <a href="https://www.google.com"><img src="./assets/images/sample.jpg" alt="placeholder"></a>
-            </div>
-        <!--more projects to be added in the future-->
-        </div>
-    </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
-             <form action="#" method="post" class="contact-form">
-        <div class="form-group">
-           <label for="name">Name:</label>
-           <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email"required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit">Send</button>
-    </form>
-        </div>
-</section>
 
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="sub-box1">
+                    <h3>Horiseon</h3>
+                    <a href="https://schneibley.github.io/homework-01/"><img id="headline" src="./assets/images/01-html-css-git-homework-demo.png" alt="a sample image of my project"></a>
+                </div>
+                <div class="content-wrapper">
+
+                    <div class="sub-box2">
+                        <h3>Upcoming Project</h3>
+                        <a href="https://www.google.com"><img src="./assets/images/sample.jpg" alt="placeholder"></a>
+                    </div>
+                    <div class="sub-box2">
+                        <h3>Upcoming Project</h3>
+                        <a href="https://www.google.com"><img src="./assets/images/sample.jpg" alt="placeholder"></a>
+                    </div>
+                    <div class="sub-box2">
+                        <h3>Upcoming Project</h3>
+                        <a href="https://www.google.com"><img src="./assets/images/sample.jpg" alt="placeholder"></a>
+                    </div>
+                    <div class="sub-box2">
+                        <h3>Upcoming Project</h3>
+                        <a href="https://www.google.com"><img src="./assets/images/sample.jpg" alt="placeholder"></a>
+                    </div>
+                    <!--more projects to be added in the future-->
+
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <span>Thanks for visiting my portfolio</span>
     </footer>
 </body>
+
+</html>
