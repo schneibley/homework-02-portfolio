@@ -133,7 +133,7 @@ background-color: rgb(69, 193, 151);
     img {
       margin: 0 auto;
       display: block; 
-      max-width: 100%; 
+      max-width: 90%; 
     }
   
     .container {
